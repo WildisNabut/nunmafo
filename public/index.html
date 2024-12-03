@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="overflow-y-scroll bg-fixed h-screen bg-white mx-auto" style="background-image: url('../img/foto-desa.jpg'); background-size: cover; background-position: center">
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="index.html" class="font-bold text-lg block py-6">Nun<span class="text-orange-500">mafo</span></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-teal-300 shadow-lg rounded max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full lg:rounded-none">
+              <ul class="block lg:flex mr-10">
+                <li class="group relative">
+                  <a href="index.html" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Beranda</a>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Informasi
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#pengumuman" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pengumuman</a>
+                    </li>
+                    <li>
+                      <a href="berita.html" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Berita</a>
+                    </li>
+                    <li>
+                      <a href="#pembangunan" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pembangunan</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Galeri
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#foto" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Foto</a>
+                    </li>
+                    <li>
+                      <a href="#video" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Video</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Profil Desa
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#sejarah" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Sejarah</a>
+                    </li>
+                    <li>
+                      <a href="#visi-misi" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Visi & Misi</a>
+                    </li>
+                    <li>
+                      <a href="#struktur" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Struktur Organisasi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#kontak" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Kontak</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Awal hero section -->
+    <section id="home" class="pt-36">
+      <div class="container mx-auto px-4 flex items-center justify-center">
+        <div class="flex flex-wrap items-center justify-center">
+          <!-- Bagian Teks -->
+          <div class="w-full self-center text-center px-4 mb-10 lg:mb-0">
+            <h1 class="text-base font-semibold text-teal-300 font-mono">
+              Selamat datang di
+              <span class="block font-bold text-black text-2xl lg:text-4xl mt-1 font-sans shadow-slate-800">WEBSITE DESA NUN<span class="text-orange-500">MAFO</span></span>
+            </h1>
+            <h2 class="text-sm font-medium text-black mb-4">Kec. Amabi Oefeto Tim. Kabupaten Kupang Nusa Tenggara Timur.</h2>
+            <p class="text-sm font-medium text-black mb-10 leading-relaxed">Temukan berbagai informasi terkait kegiatan, peristiwa seputar desa Nunmafo dan sekitarnya</p>
+            <a href="#" class="text-base font-normal lg:font-semibold text-red-500 border-2 border-orange-500 py-3 px-8 rounded-full hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out"> Hubungi Kami </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir hero section -->
+
+    <!-- Sambutan -->
+    <section class="bg-slate-100 mt-32">
+      <div class="flex flex-col lg:flex-row items-center justify-between p-6 space-y-6 lg:space-y-0 lg:mx-20">
+        <!-- Sambutan Kepala Desa -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+          <h2 class="text-5xl font-bold text-blue-300">Sambutan Kepala Desa</h2>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Selamat datang di website resmi desa kami. Kami berkomitmen untuk memberikan pelayanan terbaik kepada masyarakat. Semoga dengan adanya website ini, informasi dapat tersampaikan dengan lebih efektif dan efisien.
+          </p>
+        </div>
+
+        <!-- Gambar Kantor Desa -->
+        <div class="lg:w-1/2 flex justify-center">
+          <img
+            src="../img/iqheilzr.bmp"
+            alt="Kantor Desa"
+            class="w-full lg:mr[-10px] max-w-md rounded-lg shadow-lg opacity-0 transition-opacity duration-1000 ease-out transform translate-y-10 lg:opacity-100 lg:translate-y-0 lg:transition-none"
+            onload="this.classList.remove('opacity-0', 'translate-y-10'); this.classList.add('opacity-100', 'translate-y-0');"
+          />
+        </div>
+      </div>
+    </section>
+    <!--sambutan-->
+
+    <!-- struktur Organisasi -->
+    <section id="struktur" class="py-10 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-6 mt-10">Struktur Organisasi</h2>
+        <span class="w-full h-[1px] my-2 block bg-black transition-all duration-300 text-center"></span>
+        <div class="relative">
+          <!-- Tombol Navigasi Kiri -->
+          <button id="scrollLeft" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+            &#9664;
+            <!-- Panah kiri -->
+          </button>
+
+          <!-- Wrapper untuk scroll -->
+          <div id="scrollContainer" class="overflow-x-auto flex space-x-4 scrollbar-hide mx-auto">
+            <!-- Card 1 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Amros N. N. Tefu</h3>
+                <p class="text-gray-500">Kepala Desa</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Nama</h3>
+                <p class="text-gray-500">sekretaris</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Nama Bendahara</h3>
+                <p class="text-gray-500">Bendahara</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">nama Dusun 1</h3>
+                <p class="text-gray-500">Dusun</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Nama Dusun 2</h3>
+                <p class="text-gray-500">Dusun</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Nama Dusun 3</h3>
+                <p class="text-gray-500">Dusun</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Dusun 4</h3>
+                <p class="text-gray-500">Dusun</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="min-w-[250px] h-80 bg-white rounded-lg shadow-md p-4 flex-shrink-0">
+              <div class="text-center">
+                <img src="https://via.placeholder.com/100" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-20" />
+                <h3 class="text-lg font-semibold">Dusun 5</h3>
+                <p class="text-gray-500">Dusun</p>
+              </div>
+            </div>
+            <!-- Tambahkan card lain di sini -->
+          </div>
+
+          <!-- Tombol Navigasi Kanan -->
+          <button id="scrollRight" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+            &#9654;
+            <!-- Panah kanan -->
+          </button>
+        </div>
+        <span class="w-full h-[1px] my-2 block bg-black transition-all duration-300 text-center"></span>
+      </div>
+    </section>
+    <!-- Akhir struktur Organisasi -->
+
+    <!--pendduduk  -->
+    <section class="text-center py-8 bg-gray-100 overflow bg-fixed mx-auto bg-cover bg-center" style="background-image: url(/img/iqheilzr.bmp)">
+      <h2 class="text-xl font-bold text-teal-300 mb-2">Administrasi Penduduk</h2>
+      <p class="text-white mb-6">Efisiensi pengelolaan data dan informasi kependudukan yang lebih efektif.</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <!-- Penduduk -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="/img/penduduk.png" alt="Penduduk" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">1.139</p>
+          <p class="text-gray-600">Penduduk</p>
+        </div>
+
+        <!-- Laki-laki -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="/img/laki-laki.png" alt="Laki-Laki" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">595</p>
+          <p class="text-gray-600">Laki-Laki</p>
+        </div>
+
+        <!-- Kepala Keluarga -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="/img/kepla.png" alt="Kepala Keluarga" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">299</p>
+          <p class="text-gray-600">Kepala Keluarga</p>
+        </div>
+
+        <!-- Perempuan -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="/img/perempuan.png" alt="Perempuan" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">544</p>
+          <p class="text-gray-600">Perempuan</p>
+        </div>
+
+        <!-- Penduduk Sementara -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="https://via.placeholder.com/100" alt="Penduduk Sementara" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">58</p>
+          <p class="text-gray-600">Penduduk Sementara</p>
+        </div>
+
+        <!-- Mutasi Penduduk -->
+        <div class="flex flex-col items-center bg-white mx-10 rounded pt-4 transition-transform duration-300 transform hover:scale-110">
+          <img src="https://via.placeholder.com/100" alt="Mutasi Penduduk" class="w-16 h-16 mb-2 lg:w-24 lg:h-24" />
+          <p class="text-2xl font-semibold">7</p>
+          <p class="text-gray-600">Mutasi Penduduk</p>
+        </div>
+      </div>
+    </section>
+    <!-- penduduk -->
+    <section class="bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold text-orange-500 font-mono pt-10">Property Desa</h2>
+        <span class="w[30px] h-[2px] block my-1 bg-black"></span>
+        <div class="grid grid-cols-12 gap-3 pt-10">
+          <!-- Card Tempat Ibadah -->
+          <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-80 h-auto">
+            <div class="flex flex-col items-center text-center">
+              <!-- Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-orange-600 hover:text-orange-800 transition-colors duration-300">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+                />
+              </svg>
+              <!-- Nama Tempat -->
+              <h3 class="mt-4 text-lg font-semibold text-gray-800 hover:text-orange-800 transition-colors duration-300">Tempat Ibadah</h3>
+              <!-- Tombol Lihat dengan Panah -->
+              <a
+                href="tempat_ibadah.html"
+                class="mt-4 text-base font-semibold text-red-500 border-2 border-orange-500 py-2 px-8 rounded-lg flex items-center justify-center gap-2 hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                Lihat
+                <!-- Ikon Panah -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Sekolah -->
+          <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-80 h-auto">
+            <div class="flex flex-col items-center text-center">
+              <!-- Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-orange-600 hover:text-orange-800 transition-colors duration-300">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                />
+              </svg>
+
+              <!-- Nama Tempat -->
+              <h3 class="mt-4 text-lg font-semibold text-gray-800 hover:text-orange-800 transition-colors duration-300">Sekolah</h3>
+              <!-- Tombol Lihat dengan Panah -->
+              <a
+                href="sekolah.html"
+                class="mt-4 text-base font-semibold text-red-500 border-2 border-orange-500 py-2 px-8 rounded-lg flex items-center justify-center gap-2 hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                Lihat
+                <!-- Ikon Panah -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card posyandu -->
+          <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 w-80 h-auto">
+            <div class="flex flex-col items-center text-center">
+              <!-- Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-orange-500 hover:text-orange-800">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+
+              <!-- Nama Tempat -->
+              <h3 class="mt-4 text-lg font-semibold text-gray-800 hover:text-orange-800 transition-colors duration-300">Posyandu</h3>
+              <!-- Tombol Lihat dengan Panah -->
+              <a
+                href="tempat_ibadah.html"
+                class="mt-4 text-base font-semibold text-red-500 border-2 border-orange-500 py-2 px-8 rounded-lg flex items-center justify-center gap-2 hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out"
+              >
+                Lihat
+                <!-- Ikon Panah -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="h-60 bg-gray-100 text-center">
+        <h2 class="text-5xl font-bold text-orange-500 pt-10">Peta Desa</h2>
+      </div>
+    </section>
+
+    <div class="relative">
+      <div class="absolute inset-x-0 -top-32 lg:-top-40 flex items-center justify-center">
+        <div class="w-full mx-5 h-[200px] lg:h-[300px]">
+          <iframe
+            class="w-full h-full rounded-lg shadow-lg pt-10"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.287049654395!2d124.0562131!3d-10.0819979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56744d58308ee5%3A0x54a68d2a3b387694!2sNunmafo%2C%20Kec.%20Amabi%20Oefeto%20Tim.%2C%20Kabupaten%20Kupang%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1685275291023!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="h-40 bg-gray-300"></div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <!-- Kolom 1 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Tentang Desa</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Desa Nunmafo merupakan bagian dari Kec. Amabi Oefeto Tim. di Kab. Kupang, NTT. Kami berkomitmen untuk melayani masyarakat dengan baik.</p>
+          </div>
+          <!-- Kolom 2 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Menu Cepat</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#home" class="hover:text-orange-400 transition">Beranda</a></li>
+              <li><a href="#informasi" class="hover:text-orange-400 transition">Informasi</a></li>
+              <li><a href="#galeri" class="hover:text-orange-400 transition">Galeri</a></li>
+              <li><a href="#kontak" class="hover:text-orange-400 transition">Kontak</a></li>
+            </ul>
+          </div>
+          <!-- Kolom 3 -->
+          <div class="w-full sm:w-1/3">
+            <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+            <ul class="text-sm space-y-2 text-gray-400">
+              <li>Telepon: <a href="tel:+628123456789" class="hover:text-orange-400 transition">+62 812 3456 789</a></li>
+              <li>Email: <a href="mailto:info@nunmafo.desa.id" class="hover:text-orange-400 transition">info@nunmafo.desa.id</a></li>
+              <li>Alamat: Kec. Amabi Oefeto Tim., Kab. Kupang, NTT</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Garis dan Hak Cipta -->
+        <div class="mt-8 border-t border-gray-600 pt-4 text-center">
+          <p class="text-sm text-gray-500">© 2024 Desa Nunmafo. Semua Hak Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- awal footer -->
+
+    <!-- akhir Footer -->
+    <script src="../src/js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  </body>
+</html>

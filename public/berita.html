@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class=" h-screen bg-white mx-auto" background-size: cover; background-position: center">
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="index.html" class="font-bold text-lg block py-6">Nun<span class="text-orange-500">mafo</span></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-teal-300 shadow-lg rounded max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full lg:rounded-none">
+              <ul class="block lg:flex mr-10">
+                <li class="group relative">
+                  <a href="index.html" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Beranda</a>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Informasi
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#pengumuman" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pengumuman</a>
+                    </li>
+                    <li>
+                      <a href="#berita" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Berita</a>
+                    </li>
+                    <li>
+                      <a href="#pembangunan" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pembangunan</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Galeri
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#foto" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Foto</a>
+                    </li>
+                    <li>
+                      <a href="#video" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Video</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Profil Desa
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#sejarah" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Sejarah</a>
+                    </li>
+                    <li>
+                      <a href="#visi-misi" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Visi & Misi</a>
+                    </li>
+                    <li>
+                      <a href="#struktur" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Struktur Organisasi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#kontak" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Kontak</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Akhir Header -->
+
+<!-- Awal hero section -->
+<section id="home" class="pt-36 h-96 w-full bg-cover bg-center" style="background-image: url('/img/Rectangle 1.png');">
+  <div class="container mx-auto px-4 flex flex-col items-center justify-center h-full">
+    <!-- Bagian Logo -->
+    <div>
+      <img src="/img/logo/Meubel House_Logos-05.svg" alt="Logo">
+    </div>
+    <!-- Bagian Judul Berita -->
+    <div class="mb-2">
+      <h2 class="font-bold text-center font-poppins text-4xl">Berita</h2>
+    </div>
+    <!-- Bagian Breadcrumb -->
+    <div class="flex items-center space-x-4 ">
+      <h4 class="font-bold text-center font-serif text-lg">Home</h4>
+      <img src="..//img/logo/panah.svg" alt="panah" class="h-4 w-4">
+      <h4 class=" text-center font-serif text-lg">Berita</h4>
+    </div>
+  </div>
+</section>
+<!-- Akhir hero section -->
+
+
+  <div class="container mx-auto">
+    <div class="grid grid-cols-12 gap-3">
+      <div class="col-span-12 lg:col-span-8 mt-10 max-w-3xl mx-auto bg-white rounded-lg overflow-hidden mb-10">
+        
+        <!-- berita Pertama -->
+        <div>
+          <img src="/img/Rectangle 68.png" alt="Gambar Deskripsi" class="w-full h-auto">
+          <!-- Informasi -->
+          <div class="p-6">
+            <!-- Ikon dan Label -->
+            <div class="flex items-center text-gray-500 text-sm mb-4">
+              <!-- Admin -->
+              <div class="flex items-center mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4.992 4.992 0 0112 15c1.657 0 3.156.672 4.121 1.804M12 7a4 4 0 100 8 4 4 0 000-8zm-6 12a6 6 0 1112 0H6z" />
+                </svg>
+                <span>Admin</span>
+              </div>
+              <!-- Tanggal -->
+              <div class="flex items-center mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2zm2 4h6" />
+                </svg>
+                <span>14 Oct 2022</span>
+              </div>
+              <!-- Kategori -->
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m-6-8h6M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>Wood</span>
+              </div>
+            </div>
+        
+            <!-- Judul -->
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Going all-in with millennial design</h2>
+        
+            <!-- Deskripsi -->
+            <p class="text-gray-600 mb-4 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi aliquid iste excepturi rem sint nostrum eaque id, veritatis fugiat mollitia cupiditate eos ducimus minus fugit aliquam ratione, consequuntur nobis! Sit porro omnis, magni eligendi dolores maiores eius officia veritatis recusandae doloribus delectus illum, asperiores nobis dolor, officiis culpa quis?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc.
+            </p>
+        
+            <!-- Link -->
+            <a href="#" class="text-red-500 hover:underline">Read more</a>
+          </div>
+        </div>
+
+        <!-- brita Kedua -->
+        <div>
+          <img src="/img/Rectangle 68.png" alt="Gambar Deskripsi" class="w-full h-auto">        
+          <div class="p-6">
+            <!-- Ikon dan Label -->
+            <div class="flex items-center text-gray-500 text-sm mb-4">
+              <!-- Admin -->
+              <div class="flex items-center mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4.992 4.992 0 0112 15c1.657 0 3.156.672 4.121 1.804M12 7a4 4 0 100 8 4 4 0 000-8zm-6 12a6 6 0 1112 0H6z" />
+                </svg>
+                <span>Admin</span>
+              </div>
+              <!-- Tanggal -->
+              <div class="flex items-center mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2zm2 4h6" />
+                </svg>
+                <span>14 Oct 2022</span>
+              </div>
+              <!-- Kategori -->
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m-6-8h6M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>Wood</span>
+              </div>
+            </div>
+
+            <!-- Judul -->
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Going all-in with millennial design</h2>
+
+            <!-- Deskripsi -->
+            <p class="text-gray-600 mb-4 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis animi aliquid iste excepturi rem sint nostrum eaque id, veritatis fugiat mollitia cupiditate eos ducimus minus fugit aliquam ratione, consequuntur nobis! Sit porro omnis, magni eligendi dolores maiores eius officia veritatis recusandae doloribus delectus illum, asperiores nobis dolor, officiis culpa quis?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc.
+            </p>
+
+            <!-- Link -->
+             <div>
+              <a href="#" class="text-red-500 hover:text-red-800 mb-20 ">Read more</a>
+              <span class="w-[30px] h-[2px] my-1 block bg-black transition-all duration-300"></span>
+             </div>
+          </div>
+        </div>
+
+          <!-- button lanjut -->
+          <div class="flex justify-center mt-4">
+            <!-- Pagination -->
+            <div class="flex items-center space-x-2">
+              <!-- Active Page -->
+              <button class="w-8 h-8 bg-yellow-700 text-white font-bold rounded-full">
+                1
+              </button>
+              <!-- Other Pages -->
+              <button class="w-8 h-8 bg-gray-100 text-black rounded-full hover:bg-gray-200">
+                2
+              </button>
+              <button class="w-8 h-8 bg-gray-100 text-black rounded-full hover:bg-gray-200">
+                3
+              </button>
+              <!-- Next Button -->
+              <button class="px-4 h-8 bg-gray-100 text-black rounded-full hover:bg-gray-200">
+                Next
+              </button>
+            </div>
+          </div>
+          <!-- akhit button lanjut -->
+        </div>
+
+        <!-- Bagian kiri Untuk pencarian -->
+      <div class="col-span-12 lg:col-span-4 p-4 mt-10">
+        <!-- Search -->
+        <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="flex-1 px-4 py-2 focus:outline-none"
+          />
+          <button class="px-4 py-2 bg-white hover:text-orange-600">
+            <img src="/img/logo/akar-icons_search.svg" alt="">
+          </button>
+        </div>
+      
+        <!-- Categories -->
+        <div class="mt-8">
+          <h2 class="text-lg font-semibold mb-4">Categories</h2>
+          <ul>
+            <li class="flex justify-between text-sm py-2">
+              Crafts <span>2</span>
+            </li>
+            <li class="flex justify-between text-sm py-2">
+              Design <span>8</span>
+            </li>
+            <li class="flex justify-between text-sm py-2">
+              Handmade <span>7</span>
+            </li>
+            <li class="flex justify-between text-sm py-2">
+              Interior <span>1</span>
+            </li>
+            <li class="flex justify-between text-sm py-2">
+              Wood <span>6</span>
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Recent Posts -->
+        <div class="mt-8">
+          <h2 class="text-lg font-semibold mb-4">Recent Posts</h2>
+          <div class="flex items-center mb-4">
+            <img
+              src="/img/Rectangle 69(3).png"
+              alt="Post 1"
+              class="w-12 h-12 rounded-md object-cover mr-4"
+            />
+            <div>
+              <h3 class="text-sm font-medium">Going all-in with millennial design</h3>
+              <span class="text-xs text-gray-500">03 Aug 2022</span>
+            </div>
+          </div>
+          <div class="flex items-center mb-4">
+            <img
+              src="/img/Rectangle 69(2).png"
+              alt="Post 2"
+              class="w-12 h-12 rounded-md object-cover mr-4"
+            />
+            <div>
+              <h3 class="text-sm font-medium">Exploring new ways of decorating</h3>
+              <span class="text-xs text-gray-500">03 Aug 2022</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="/img/Rectangle 69(1).png"
+              alt="Post 3"
+              class="w-12 h-12 rounded-md object-cover mr-4"
+            />
+            <div>
+              <h3 class="text-sm font-medium">Handmade pieces that took time to make</h3>
+              <span class="text-xs text-gray-500">03 Aug 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Bagian kiri Untuk Pencarian -->
+    </div>
+  </div>
+
+
+
+    <section>
+      <div class="h-60 bg-gray-100 text-center">
+        <h2 class="text-5xl font-bold text-orange-500 pt-10">Peta Desa</h2>
+      </div>
+    </section>
+
+    <div class="relative">
+      <div class="absolute inset-x-0 -top-32 lg:-top-40 flex items-center justify-center">
+        <div class="w-full mx-5 h-[200px] lg:h-[300px]">
+          <iframe
+            class="w-full h-full rounded-lg shadow-lg pt-10"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.287049654395!2d124.0562131!3d-10.0819979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56744d58308ee5%3A0x54a68d2a3b387694!2sNunmafo%2C%20Kec.%20Amabi%20Oefeto%20Tim.%2C%20Kabupaten%20Kupang%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1685275291023!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="h-40 bg-gray-300"></div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <!-- Kolom 1 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Tentang Desa</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Desa Nunmafo merupakan bagian dari Kec. Amabi Oefeto Tim. di Kab. Kupang, NTT. Kami berkomitmen untuk melayani masyarakat dengan baik.</p>
+          </div>
+          <!-- Kolom 2 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Menu Cepat</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#home" class="hover:text-orange-400 transition">Beranda</a></li>
+              <li><a href="#informasi" class="hover:text-orange-400 transition">Informasi</a></li>
+              <li><a href="#galeri" class="hover:text-orange-400 transition">Galeri</a></li>
+              <li><a href="#kontak" class="hover:text-orange-400 transition">Kontak</a></li>
+            </ul>
+          </div>
+          <!-- Kolom 3 -->
+          <div class="w-full sm:w-1/3">
+            <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+            <ul class="text-sm space-y-2 text-gray-400">
+              <li>Telepon: <a href="tel:+628123456789" class="hover:text-orange-400 transition">+62 812 3456 789</a></li>
+              <li>Email: <a href="mailto:info@nunmafo.desa.id" class="hover:text-orange-400 transition">info@nunmafo.desa.id</a></li>
+              <li>Alamat: Kec. Amabi Oefeto Tim., Kab. Kupang, NTT</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Garis dan Hak Cipta -->
+        <div class="mt-8 border-t border-gray-600 pt-4 text-center">
+          <p class="text-sm text-gray-500">© 2024 Desa Nunmafo.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- awal footer -->
+
+    <!-- akhir Footer -->
+    <script src="../src/js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  </body>
+</html>

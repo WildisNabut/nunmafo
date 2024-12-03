@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class=" h-screen bg-white mx-auto" background-size: cover; background-position: center">
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="index.html" class="font-bold text-lg block py-6">Nun<span class="text-orange-500">mafo</span></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+              <span class="w-[30px] h-[2px] my-2 block bg-black transition-all duration-300"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-teal-300 shadow-lg rounded max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full lg:rounded-none">
+              <ul class="block lg:flex mr-10">
+                <li class="group relative">
+                  <a href="index.html" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Beranda</a>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Informasi
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#pengumuman" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pengumuman</a>
+                    </li>
+                    <li>
+                      <a href="berita.html" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Berita</a>
+                    </li>
+                    <li>
+                      <a href="#pembangunan" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Pembangunan</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Galeri
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#foto" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Foto</a>
+                    </li>
+                    <li>
+                      <a href="#video" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Video</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#" class="text-base text-black my-2 mx-8 flex items-center group-hover:text-orange-500">
+                    Profil Desa
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="hidden group-hover:block bg-white shadow-lg rounded-lg w-40 mt-2 lg:absolute lg:top-full lg:left-0 lg:mt-0">
+                    <li>
+                      <a href="#sejarah" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Sejarah</a>
+                    </li>
+                    <li>
+                      <a href="#visi-misi" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Visi & Misi</a>
+                    </li>
+                    <li>
+                      <a href="#struktur" class="block px-4 py-2 text-black hover:bg-orange-100 hover:text-orange-500">Struktur Organisasi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a href="#kontak" class="text-base text-black my-2 mx-8 flex group-hover:text-orange-500">Kontak</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Akhir Header -->
+
+<!-- Awal hero section -->
+<section id="home" class="pt-36 h-96 w-full bg-cover bg-center" style="background-image: url('/img/Rectangle 1.png');">
+  <div class="container mx-auto px-4 flex flex-col items-center justify-center h-full">
+    <!-- Bagian Logo -->
+    <div>
+      <img src="/img/logo/Meubel House_Logos-05.svg" alt="Logo">
+    </div>
+    <!-- Bagian Judul Berita -->
+    <div class="mb-2">
+      <h2 class="font-bold text-center font-poppins text-4xl">Rumah Ibadah</h2>
+    </div>
+    <!-- Bagian Breadcrumb -->
+    <div class="flex items-center space-x-4 ">
+      <h4 class="font-bold text-center font-serif text-lg">Home</h4>
+      <img src="..//img/logo/panah.svg" alt="panah" class="h-4 w-4">
+      <h4 class=" text-center font-serif text-lg">Rumah Ibadah</h4>
+    </div>
+  </div>
+</section>
+<!-- Akhir hero section -->
+
+
+    <!-- Tempat Ibadah -->
+    <section class="bg-gray-100">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 gap-3">
+  
+            <!-- tempat ibadah 1 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+              <!-- Gambar -->
+              <img src="/img/gmit-elim Kenam.png" alt="Gambar Deskripsi" class="w-full h-40 rounded-t-lg">
+              
+              <!-- Konten -->
+              <div class="p-5">
+                <!-- Nama Tempat -->
+                <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                
+                  Gereja GMIT Elim Kenam
+                </h3>
+          
+                <!-- Alamat -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>                
+                  Jl. Contoh Alamat, Kota Contoh
+                </p>
+          
+                <!-- Kontak -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                
+                  +62 812 3456 7890
+                </p>
+          
+                <!-- Email -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>                
+                  email@example.com
+                </p>
+          
+                <!-- Jadwal Ibadah -->
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                
+                  Minggu, 08:00 - 10:00 WIB
+                </p>
+              </div>
+            </div>
+  
+            <!-- tempat ibadah 2 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+              <!-- Gambar -->
+              <img src="/img/gsja.jpg" alt="Gambar Deskripsi" class="w-full h-40 rounded-t-lg">
+              
+              <!-- Konten -->
+              <div class="p-5">
+                <!-- Nama Tempat -->
+                <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                
+                  GSJA  Elim Kenam
+                </h3>
+          
+                <!-- Alamat -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>                
+                  Jl. Contoh Alamat, Kota Contoh
+                </p>
+          
+                <!-- Kontak -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                
+                  +62 812 3456 7890
+                </p>
+          
+                <!-- Email -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>                
+                  email@example.com
+                </p>
+          
+                <!-- Jadwal Ibadah -->
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                
+                  Minggu, 08:00 - 10:00 WIB
+                </p>
+              </div>
+            </div>
+  
+            <!-- tempat ibadah 3 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+              <!-- Gambar -->
+              <img src="/img/gpdi letkole.jpg" alt="Gambar Deskripsi" class="w-full h-40 rounded-t-lg">
+              
+              <!-- Konten -->
+              <div class="p-5">
+                <!-- Nama Tempat -->
+                <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                
+                  Gpdi Getsemani Letkole
+                </h3>
+          
+                <!-- Alamat -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>                
+                  Jl. Contoh Alamat, Kota Contoh
+                </p>
+          
+                <!-- Kontak -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                
+                  +62 812 3456 7890
+                </p>
+          
+                <!-- Email -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>                
+                  email@example.com
+                </p>
+          
+                <!-- Jadwal Ibadah -->
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                
+                  Minggu, 08:00 - 10:00 WIB
+                </p>
+              </div>
+            </div>
+  
+            <!-- tempat ibadah 4 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+              <!-- Gambar -->
+              <img src="/img/santu yosep kenam.png" alt="Gambar Deskripsi" class="w-full h-40 rounded-t-lg">
+              
+              <!-- Konten -->
+              <div class="p-5">
+                <!-- Nama Tempat -->
+                <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                
+                  Stasi santu Yosep Kenam
+                </h3>
+          
+                <!-- Alamat -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>                
+                  Jl. Contoh Alamat, Kota Contoh
+                </p>
+          
+                <!-- Kontak -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                
+                  +62 812 3456 7890
+                </p>
+          
+                <!-- Email -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>                
+                  email@example.com
+                </p>
+          
+                <!-- Jadwal Ibadah -->
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                
+                  Minggu, 08:00 - 10:00 WIB
+                </p>
+              </div>
+            </div>
+  
+            <!-- tempat ibadah 5 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-3 py-10 max-w-3xl mx-auto bg-gray-100 rounded-lg overflow-hidden">
+              <!-- Gambar -->
+              <img src="/img/santu yosep kenam.png" alt="Gambar Deskripsi" class="w-full h-40 rounded-t-lg">
+              
+              <!-- Konten -->
+              <div class="p-5">
+                <!-- Nama Tempat -->
+                <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                
+                  Gereja Ebenheaser Nunmafo
+                </h3>
+          
+                <!-- Alamat -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>                
+                  Jl. Contoh Alamat, Kota Contoh
+                </p>
+          
+                <!-- Kontak -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                
+                  +62 812 3456 7890
+                </p>
+          
+                <!-- Email -->
+                <p class="text-sm text-gray-600 mb-2 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>                
+                  email@example.com
+                </p>
+          
+                <!-- Jadwal Ibadah -->
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 w-5 h-5 text-gray-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                
+                  Minggu, 08:00 - 10:00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+       </section>
+       <!-- Akhir tempat Ibadah -->
+
+
+
+    <section>
+      <div class="h-60 bg-gray-100 text-center">
+        <h2 class="text-5xl font-bold text-orange-500 pt-10">Peta Desa</h2>
+      </div>
+    </section>
+
+    <div class="relative">
+      <div class="absolute inset-x-0 -top-32 lg:-top-40 flex items-center justify-center">
+        <div class="w-full mx-5 h-[200px] lg:h-[300px]">
+          <iframe
+            class="w-full h-full rounded-lg shadow-lg pt-10"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.287049654395!2d124.0562131!3d-10.0819979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56744d58308ee5%3A0x54a68d2a3b387694!2sNunmafo%2C%20Kec.%20Amabi%20Oefeto%20Tim.%2C%20Kabupaten%20Kupang%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1685275291023!5m2!1sid!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="h-40 bg-gray-300"></div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <!-- Kolom 1 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Tentang Desa</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Desa Nunmafo merupakan bagian dari Kec. Amabi Oefeto Tim. di Kab. Kupang, NTT. Kami berkomitmen untuk melayani masyarakat dengan baik.</p>
+          </div>
+          <!-- Kolom 2 -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Menu Cepat</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#home" class="hover:text-orange-400 transition">Beranda</a></li>
+              <li><a href="#informasi" class="hover:text-orange-400 transition">Informasi</a></li>
+              <li><a href="#galeri" class="hover:text-orange-400 transition">Galeri</a></li>
+              <li><a href="#kontak" class="hover:text-orange-400 transition">Kontak</a></li>
+            </ul>
+          </div>
+          <!-- Kolom 3 -->
+          <div class="w-full sm:w-1/3">
+            <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
+            <ul class="text-sm space-y-2 text-gray-400">
+              <li>Telepon: <a href="tel:+628123456789" class="hover:text-orange-400 transition">+62 812 3456 789</a></li>
+              <li>Email: <a href="mailto:info@nunmafo.desa.id" class="hover:text-orange-400 transition">info@nunmafo.desa.id</a></li>
+              <li>Alamat: Kec. Amabi Oefeto Tim., Kab. Kupang, NTT</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Garis dan Hak Cipta -->
+        <div class="mt-8 border-t border-gray-600 pt-4 text-center">
+          <p class="text-sm text-gray-500">© 2024 Desa Nunmafo.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- awal footer -->
+
+    <!-- akhir Footer -->
+    <script src="../src/js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  </body>
+</html>
